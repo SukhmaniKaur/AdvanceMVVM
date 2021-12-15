@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FAAD357B276916F5002B0FC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD357A276916F5002B0FC6 /* AppDelegate.swift */; };
-		FAAD357D276916F5002B0FC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD357C276916F5002B0FC6 /* SceneDelegate.swift */; };
 		FAAD357F276916F5002B0FC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD357E276916F5002B0FC6 /* ViewController.swift */; };
 		FAAD3582276916F5002B0FC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD3580276916F5002B0FC6 /* Main.storyboard */; };
 		FAAD3584276916F9002B0FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAD3583276916F9002B0FC6 /* Assets.xcassets */; };
 		FAAD3587276916F9002B0FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD3585276916F9002B0FC6 /* LaunchScreen.storyboard */; };
 		FAAD3592276916F9002B0FC6 /* AdvanceMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD3591276916F9002B0FC6 /* AdvanceMVVMTests.swift */; };
 		FAAD359D276916FA002B0FC6 /* AdvanceMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD359C276916FA002B0FC6 /* AdvanceMVVMUITests.swift */; };
+		FAAD35B327691800002B0FC6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD35B127691800002B0FC6 /* HomeCell.swift */; };
+		FAAD35B427691800002B0FC6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAD35B227691800002B0FC6 /* HomeCell.xib */; };
+		FAAD35B927691B7B002B0FC6 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD35B827691B7B002B0FC6 /* GlobalConstants.swift */; };
+		FAAD35BE27691C55002B0FC6 /* HomeCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD35BD27691C55002B0FC6 /* HomeCellVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		FAAD3577276916F5002B0FC6 /* AdvanceMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD357A276916F5002B0FC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAAD357C276916F5002B0FC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAAD357E276916F5002B0FC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAAD3581276916F5002B0FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAD3583276916F9002B0FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		FAAD3598276916FA002B0FC6 /* AdvanceMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvanceMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD359C276916FA002B0FC6 /* AdvanceMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceMVVMUITests.swift; sourceTree = "<group>"; };
 		FAAD359E276916FA002B0FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAD35B127691800002B0FC6 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		FAAD35B227691800002B0FC6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		FAAD35B827691B7B002B0FC6 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		FAAD35BD27691C55002B0FC6 /* HomeCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,14 @@
 		FAAD3579276916F5002B0FC6 /* AdvanceMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				FAAD35B0276917E9002B0FC6 /* Xib */,
 				FAAD357A276916F5002B0FC6 /* AppDelegate.swift */,
-				FAAD357C276916F5002B0FC6 /* SceneDelegate.swift */,
 				FAAD357E276916F5002B0FC6 /* ViewController.swift */,
 				FAAD3580276916F5002B0FC6 /* Main.storyboard */,
 				FAAD3583276916F9002B0FC6 /* Assets.xcassets */,
 				FAAD3585276916F9002B0FC6 /* LaunchScreen.storyboard */,
 				FAAD3588276916F9002B0FC6 /* Info.plist */,
+				FAAD35B827691B7B002B0FC6 /* GlobalConstants.swift */,
 			);
 			path = AdvanceMVVM;
 			sourceTree = "<group>";
@@ -126,6 +133,16 @@
 				FAAD359E276916FA002B0FC6 /* Info.plist */,
 			);
 			path = AdvanceMVVMUITests;
+			sourceTree = "<group>";
+		};
+		FAAD35B0276917E9002B0FC6 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD35B127691800002B0FC6 /* HomeCell.swift */,
+				FAAD35B227691800002B0FC6 /* HomeCell.xib */,
+				FAAD35BD27691C55002B0FC6 /* HomeCellVM.swift */,
+			);
+			path = Xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			files = (
 				FAAD3587276916F9002B0FC6 /* LaunchScreen.storyboard in Resources */,
 				FAAD3584276916F9002B0FC6 /* Assets.xcassets in Resources */,
+				FAAD35B427691800002B0FC6 /* HomeCell.xib in Resources */,
 				FAAD3582276916F5002B0FC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAD357F276916F5002B0FC6 /* ViewController.swift in Sources */,
+				FAAD35B327691800002B0FC6 /* HomeCell.swift in Sources */,
+				FAAD35B927691B7B002B0FC6 /* GlobalConstants.swift in Sources */,
 				FAAD357B276916F5002B0FC6 /* AppDelegate.swift in Sources */,
-				FAAD357D276916F5002B0FC6 /* SceneDelegate.swift in Sources */,
+				FAAD35BE27691C55002B0FC6 /* HomeCellVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = AdvanceMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = AdvanceMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
